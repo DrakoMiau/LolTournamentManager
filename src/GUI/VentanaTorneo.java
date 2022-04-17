@@ -1,6 +1,7 @@
 package GUI;
 
 import java.awt.FlowLayout;
+import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -19,19 +20,13 @@ public class VentanaTorneo extends javax.swing.JFrame {
         this.setResizable(false);
         jButton1.setFocusable(false);
         jButton2.setFocusable(false);
-        generarCajas(nEquipos);
-    }
-
-    public VentanaTorneo() {
-        initComponents();
-        ImageIcon wildRiftImage = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\WilRift.jpg");
-        Icon myWildRiftIcon = new ImageIcon(wildRiftImage.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH));
-        jLabel1.setIcon(myWildRiftIcon);
-        this.setLocationRelativeTo(null);
-        this.repaint();
-        this.setResizable(false);
-        jButton1.setFocusable(false);
-        jButton2.setFocusable(false);
+        int[] lblEnXArray = new int[calcularNCajas(nEquipos)];
+        int[] lblEnYArray = new int[calcularNCajas(nEquipos)];
+        int[] lblWidthArray = new int[calcularNCajas(nEquipos)];
+        int[] lblHeightArray = new int[calcularNCajas(nEquipos)];
+        generarCajas(nEquipos, lblEnXArray, lblEnYArray, lblWidthArray, lblHeightArray);
+        jPanel3.setOpaque(false);
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -41,11 +36,13 @@ public class VentanaTorneo extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1390, 780));
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1390, 780));
@@ -66,6 +63,7 @@ public class VentanaTorneo extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 710, -1, -1));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1390, 780));
 
         jPanel2.setLayout(null);
 
@@ -86,8 +84,8 @@ public class VentanaTorneo extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        VentanaCreacionTorneo volverVentanaCreacionTorneo = new VentanaCreacionTorneo();
-        volverVentanaCreacionTorneo.setVisible(true);
+        VentanaCreacionTorneo2 volverVentanaCreacionTorneo2 = new VentanaCreacionTorneo2(Integer.parseInt(VentanaCreacionTorneo.nEquipos.getText()));
+        volverVentanaCreacionTorneo2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -109,16 +107,35 @@ public class VentanaTorneo extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VentanaTorneo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaTorneo().setVisible(true);
+    }
+    
+    private int calcularNCajas (int nEquipos){
+        int nCajas = 0;
+        
+        for (int j = 0; j < calcularFilas(nEquipos); j++) {
+            for (int i = 0; i < nEquipos / Math.pow(2, j); i++) {
+                nCajas++;
             }
-        });
+        }
+        System.out.println("El numero de cajas es" + nCajas);
+        return nCajas;
+    }
+        //Solo con nEquipos potencias de 2
+    private int calcularFilas(int nEquipos) {
+        int filas = nEquipos;
+        int nFilas = 0;
+        while (filas >= 1) {
+            filas = filas / 2;
+            nFilas += 1;
+        }
+        return nFilas;
     }
 
+
     //Generar el diagrama de organización del torneo
-    private void generarCajas(int nEquipos) {
+    private void generarCajas(int nEquipos, int[] lblEnXArray, int[] lblEnYArray, int[] lblWidthArray, int[] lblHeightArray) {
+        
+        int contCajas = 0;
         for (int j = 0; j < calcularFilas(nEquipos); j++) {
             for (int i = 0; i < nEquipos / Math.pow(2, j); i++) {
                 JLabel lblCaja = new JLabel(); //Se instancia el label donde irán los cuadros de los equipos
@@ -127,28 +144,20 @@ public class VentanaTorneo extends javax.swing.JFrame {
                 int widthLblCaja = jPanel2.getWidth() / nEquipos;
                 int heightLblCaja = jPanel2.getHeight() / calcularFilas(nEquipos);
                 lblCaja.setBounds(lblCajaEnX, lblCajaEnY, widthLblCaja , heightLblCaja); //se ajusta la creación de los labels a una división el jPanel2
-                System.out.println("La posición en X de lblCaja es: " + lblCaja.getX());
                 ImageIcon caja = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\boxModelWithOutBackground.png"); //se genera una instancia de los cuadros
                 Icon iconoCaja = new ImageIcon(caja.getImage().getScaledInstance(lblCaja.getWidth(), lblCaja.getHeight(), Image.SCALE_SMOOTH)); //convertimos la imagen en un icono y escalamos la imagen
                 lblCaja.setIcon(iconoCaja);
                 lblCaja.setText("Hola xd");
                 jPanel2.add(lblCaja);
-
+                lblEnXArray[contCajas] = lblCaja.getX();
+                lblEnYArray[contCajas] = lblCaja.getY();
+                lblWidthArray[contCajas] = lblCaja.getWidth();
+                lblHeightArray[contCajas] = lblCaja.getHeight();
+                contCajas++;
             }
         }
     }
 
-    //Solo con nEquipos potencias de 2
-    private int calcularFilas(int nEquipos) {
-        int filas = nEquipos;
-        int nFilas = 0;
-        while (filas >= 1) {
-            filas = filas / 2;
-            nFilas += 1;
-        }
-        System.out.println("El número de filas es: " + nFilas);
-        return nFilas;
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -156,5 +165,6 @@ public class VentanaTorneo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 }
