@@ -1,10 +1,12 @@
 package GUI;
 
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import org.netbeans.lib.awtextra.AbsoluteLayout;
 
@@ -25,8 +27,10 @@ public class VentanaTorneo extends javax.swing.JFrame {
         int[] lblWidthArray = new int[calcularNCajas(nEquipos)];
         int[] lblHeightArray = new int[calcularNCajas(nEquipos)];
         generarCajas(nEquipos, lblEnXArray, lblEnYArray, lblWidthArray, lblHeightArray);
+        generarLabelsNombresEquipo(nEquipos, lblEnXArray, lblEnYArray, lblWidthArray, lblHeightArray);
+        generarBotonesDeClasificacion(nEquipos, lblEnXArray, lblEnYArray, lblWidthArray, lblHeightArray);
         jPanel3.setOpaque(false);
-        
+
     }
 
     @SuppressWarnings("unchecked")
@@ -63,6 +67,8 @@ public class VentanaTorneo extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 710, -1, -1));
+
+        jPanel3.setLayout(null);
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1390, 780));
 
         jPanel2.setLayout(null);
@@ -108,10 +114,10 @@ public class VentanaTorneo extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(VentanaTorneo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
     }
-    
-    private int calcularNCajas (int nEquipos){
+
+    private int calcularNCajas(int nEquipos) {
         int nCajas = 0;
-        
+
         for (int j = 0; j < calcularFilas(nEquipos); j++) {
             for (int i = 0; i < nEquipos / Math.pow(2, j); i++) {
                 nCajas++;
@@ -120,7 +126,8 @@ public class VentanaTorneo extends javax.swing.JFrame {
         System.out.println("El numero de cajas es" + nCajas);
         return nCajas;
     }
-        //Solo con nEquipos potencias de 2
+    //Solo con nEquipos potencias de 2
+
     private int calcularFilas(int nEquipos) {
         int filas = nEquipos;
         int nFilas = 0;
@@ -131,19 +138,17 @@ public class VentanaTorneo extends javax.swing.JFrame {
         return nFilas;
     }
 
-
     //Generar el diagrama de organización del torneo
     private void generarCajas(int nEquipos, int[] lblEnXArray, int[] lblEnYArray, int[] lblWidthArray, int[] lblHeightArray) {
-        
         int contCajas = 0;
         for (int j = 0; j < calcularFilas(nEquipos); j++) {
             for (int i = 0; i < nEquipos / Math.pow(2, j); i++) {
                 JLabel lblCaja = new JLabel(); //Se instancia el label donde irán los cuadros de los equipos
-                int lblCajaEnX =((int) (((jPanel2.getWidth() * i) / nEquipos) * Math.pow(2, j)) + (int) (((jPanel2.getWidth()) / nEquipos) * Math.pow(2, j)/2)) - (int)(((jPanel2.getWidth()) / nEquipos) * 1/2);
+                int lblCajaEnX = ((int) (((jPanel2.getWidth() * i) / nEquipos) * Math.pow(2, j)) + (int) (((jPanel2.getWidth()) / nEquipos) * Math.pow(2, j) / 2)) - (int) (((jPanel2.getWidth()) / nEquipos) * 1 / 2);
                 int lblCajaEnY = (jPanel2.getHeight() * j) / calcularFilas(nEquipos);
                 int widthLblCaja = jPanel2.getWidth() / nEquipos;
                 int heightLblCaja = jPanel2.getHeight() / calcularFilas(nEquipos);
-                lblCaja.setBounds(lblCajaEnX, lblCajaEnY, widthLblCaja , heightLblCaja); //se ajusta la creación de los labels a una división el jPanel2
+                lblCaja.setBounds(lblCajaEnX, lblCajaEnY, widthLblCaja, heightLblCaja); //se ajusta la creación de los labels a una división el jPanel2
                 ImageIcon caja = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\boxModelWithOutBackground.png"); //se genera una instancia de los cuadros
                 Icon iconoCaja = new ImageIcon(caja.getImage().getScaledInstance(lblCaja.getWidth(), lblCaja.getHeight(), Image.SCALE_SMOOTH)); //convertimos la imagen en un icono y escalamos la imagen
                 lblCaja.setIcon(iconoCaja);
@@ -154,6 +159,38 @@ public class VentanaTorneo extends javax.swing.JFrame {
                 lblWidthArray[contCajas] = lblCaja.getWidth();
                 lblHeightArray[contCajas] = lblCaja.getHeight();
                 contCajas++;
+            }
+        }
+    }
+
+    JLabel[] lblnombreEquipo = new JLabel[calcularNCajas(Integer.parseInt(VentanaCreacionTorneo.nEquipos.getText()))];
+    private int contLblNombreEquipo = 0;
+
+    private void generarLabelsNombresEquipo(int nEquipos, int[] lblEnXArray, int[] lblEnYArray, int[] lblWidthArray, int[] lblHeightArray) {
+        for (int j = 0; j < calcularFilas(nEquipos); j++) {
+            for (int i = 0; i < nEquipos / Math.pow(2, j); i++) {
+                lblnombreEquipo[contLblNombreEquipo] = new JLabel();
+                lblnombreEquipo[contLblNombreEquipo].setBounds(lblEnXArray[contLblNombreEquipo]+(lblWidthArray[contLblNombreEquipo]/4), lblEnYArray[contLblNombreEquipo], lblWidthArray[contLblNombreEquipo], lblHeightArray[contLblNombreEquipo]);
+                lblnombreEquipo[contLblNombreEquipo].setText("Hola xd");
+                jPanel3.add(lblnombreEquipo[contLblNombreEquipo]);
+                lblnombreEquipo[contLblNombreEquipo].setFont(new Font("Serif", Font.PLAIN, 100/nEquipos));
+                contLblNombreEquipo++;
+            }
+        }
+    }
+    
+    JButton[] buttonNombreEquipo = new JButton[calcularNCajas(Integer.parseInt(VentanaCreacionTorneo.nEquipos.getText()))];
+    
+    private int contWinnerButton = 0;
+    private void generarBotonesDeClasificacion(int nEquipos, int[] lblEnXArray, int[] lblEnYArray, int[] lblWidthArray, int[] lblHeightArray){
+        for (int j = 0; j < calcularFilas(nEquipos)-1; j++) {
+            for (int i = 0; i < nEquipos / Math.pow(2, j); i++) {
+                buttonNombreEquipo[contWinnerButton] = new JButton("hola  a todos");
+                buttonNombreEquipo[contWinnerButton].setBounds(lblEnXArray[contWinnerButton]+ (lblWidthArray[contWinnerButton]/2), lblEnYArray[contWinnerButton], lblWidthArray[contWinnerButton]/4, lblHeightArray[contWinnerButton]/4);
+                buttonNombreEquipo[contWinnerButton].setText(lblnombreEquipo[contWinnerButton].getText());
+                jPanel3.add(buttonNombreEquipo[contWinnerButton]);
+                //buttonNombreEquipo[contLblNombreEquipo].setFont(new Font("Serif", Font.PLAIN, 100/nEquipos));
+                contWinnerButton++;
             }
         }
     }

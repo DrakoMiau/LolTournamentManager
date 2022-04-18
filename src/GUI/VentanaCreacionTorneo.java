@@ -90,12 +90,10 @@ public class VentanaCreacionTorneo extends JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         try {
-            if (VentanaCreacionTorneo2.verificarPotenciaDe2(Integer.parseInt(nEquipos.getText()))) {
-                if (Integer.parseInt(nEquipos.getText()) <= 16 && Integer.parseInt(nEquipos.getText()) >= 2) {
-                    VentanaCreacionTorneo2 ventanaCrearTorneo2 = new VentanaCreacionTorneo2(Integer.parseInt(nEquipos.getText()));
-                    ventanaCrearTorneo2.setVisible(true);
-                    this.setVisible(false);
-                }
+            if (VentanaCreacionTorneo2.verificarPotenciaDe2(Integer.parseInt(nEquipos.getText())) && Integer.parseInt(nEquipos.getText()) <= 16 && Integer.parseInt(nEquipos.getText()) >= 2) {
+                VentanaCreacionTorneo2 ventanaCrearTorneo2 = new VentanaCreacionTorneo2(Integer.parseInt(nEquipos.getText()));
+                ventanaCrearTorneo2.setVisible(true);
+                this.setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(null, "Este no es un valor correcto");
             }
