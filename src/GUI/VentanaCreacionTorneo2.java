@@ -87,9 +87,24 @@ public class VentanaCreacionTorneo2 extends javax.swing.JFrame {
         try {
             if (verificarPotenciaDe2(nEquipos)) {
                 if (nEquipos <= 16 && nEquipos >= 2) {
-                    this.setVisible(false);
-                    VentanaTorneo ventanaTorneo = new VentanaTorneo(nEquipos);
-                    ventanaTorneo.setVisible(true);
+                    if (nEquipos == 2) {
+                        this.setVisible(false);
+                        VentanaTorneo ventanaTorneo = new VentanaTorneo(nEquipos);
+                        ventanaTorneo.setVisible(true);
+                    } else if (nEquipos == 4) {
+                        this.setVisible(false);
+                        VentanaTorneo4 ventanaTorneo = new VentanaTorneo4(nEquipos);
+                        ventanaTorneo.setVisible(true);
+                    } else if (nEquipos == 8) {
+                        this.setVisible(false);
+                        VentanaTorneo8 ventanaTorneo = new VentanaTorneo8(nEquipos);
+                        ventanaTorneo.setVisible(true);
+                    } else if (nEquipos == 16) {
+                        this.setVisible(false);
+                        VentanaTorneo16 ventanaTorneo = new VentanaTorneo16(nEquipos);
+                        ventanaTorneo.setVisible(true);
+                    }
+                    
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Este no es un valor correcto");
