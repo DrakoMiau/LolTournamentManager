@@ -10,7 +10,7 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
 
     public VentanaTorneo8(int nEquipos) {
         initComponents();
-        ImageIcon wildRiftImage = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\WilRift.jpg");
+        ImageIcon wildRiftImage = new ImageIcon("WilRift.jpg");
         Icon myWildRiftIcon = new ImageIcon(wildRiftImage.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH));
         jLabel1.setIcon(myWildRiftIcon);
         this.setLocationRelativeTo(null);
@@ -92,6 +92,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(60, 32, 51));
+        jButton1.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Volver");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,6 +103,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 710, -1, -1));
 
+        jButton2.setBackground(new java.awt.Color(60, 32, 51));
+        jButton2.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Menú de Inicio");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +117,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.setOpaque(false);
         jPanel3.setLayout(null);
 
-        jButton3.setText("jButton3");
+        jButton3.setBackground(new java.awt.Color(255, 204, 51));
+        jButton3.setText("✓");
+        jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -120,7 +128,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.add(jButton3);
         jButton3.setBounds(0, 0, 57, 24);
 
-        jButton4.setText("jButton4");
+        jButton4.setBackground(new java.awt.Color(255, 204, 51));
+        jButton4.setText("✓");
+        jButton4.setFocusable(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -129,7 +139,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.add(jButton4);
         jButton4.setBounds(173, 0, 57, 24);
 
-        jButton5.setText("jButton5");
+        jButton5.setBackground(new java.awt.Color(255, 204, 51));
+        jButton5.setText("✓");
+        jButton5.setFocusable(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -138,7 +150,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.add(jButton5);
         jButton5.setBounds(347, 0, 57, 24);
 
-        jButton6.setText("jButton6");
+        jButton6.setBackground(new java.awt.Color(255, 204, 51));
+        jButton6.setText("✓");
+        jButton6.setFocusable(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -147,7 +161,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.add(jButton6);
         jButton6.setBounds(521, 0, 57, 24);
 
-        jButton7.setText("jButton7");
+        jButton7.setBackground(new java.awt.Color(255, 204, 51));
+        jButton7.setText("✓");
+        jButton7.setFocusable(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -156,7 +172,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.add(jButton7);
         jButton7.setBounds(695, 0, 57, 24);
 
-        jButton8.setText("jButton8");
+        jButton8.setBackground(new java.awt.Color(255, 204, 51));
+        jButton8.setText("✓");
+        jButton8.setFocusable(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -165,7 +183,9 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.add(jButton8);
         jButton8.setBounds(868, 0, 57, 24);
 
-        jButton9.setText("jButton9");
+        jButton9.setBackground(new java.awt.Color(255, 204, 51));
+        jButton9.setText("✓");
+        jButton9.setFocusable(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -174,128 +194,172 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
         jPanel3.add(jButton9);
         jButton9.setBounds(1042, 0, 57, 24);
 
-        jButton10.setText("jButton10");
+        jButton10.setBackground(new java.awt.Color(255, 204, 51));
+        jButton10.setText("✓");
+        jButton10.setFocusable(false);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton10);
-        jButton10.setBounds(1216, 0, 64, 24);
+        jButton10.setBounds(1216, 0, 57, 24);
 
-        jButton11.setText("jButton11");
+        jButton11.setBackground(new java.awt.Color(255, 204, 51));
+        jButton11.setText("✓");
+        jButton11.setFocusable(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton11);
-        jButton11.setBounds(87, 195, 64, 24);
+        jButton11.setBounds(87, 195, 57, 24);
 
-        jButton12.setText("jButton12");
+        jButton12.setBackground(new java.awt.Color(255, 204, 51));
+        jButton12.setText("✓");
+        jButton12.setFocusable(false);
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton12);
-        jButton12.setBounds(433, 195, 64, 24);
+        jButton12.setBounds(433, 195, 57, 24);
 
-        jButton13.setText("jButton13");
+        jButton13.setBackground(new java.awt.Color(255, 204, 51));
+        jButton13.setText("✓");
+        jButton13.setFocusable(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton13);
-        jButton13.setBounds(781, 195, 64, 24);
+        jButton13.setBounds(781, 195, 57, 24);
 
-        jButton14.setText("jButton14");
+        jButton14.setBackground(new java.awt.Color(255, 204, 51));
+        jButton14.setText("✓");
+        jButton14.setFocusable(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton14);
-        jButton14.setBounds(1129, 195, 64, 24);
+        jButton14.setBounds(1129, 195, 57, 24);
 
-        jButton15.setText("jButton15");
+        jButton15.setBackground(new java.awt.Color(255, 204, 51));
+        jButton15.setText("✓");
+        jButton15.setFocusable(false);
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton15);
-        jButton15.setBounds(260, 390, 64, 24);
+        jButton15.setBounds(260, 390, 57, 24);
 
-        jButton16.setText("jButton16");
+        jButton16.setBackground(new java.awt.Color(255, 204, 51));
+        jButton16.setText("✓");
+        jButton16.setFocusable(false);
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
             }
         });
         jPanel3.add(jButton16);
-        jButton16.setBounds(952, 390, 64, 24);
+        jButton16.setBounds(952, 390, 57, 24);
 
+        jLabel2.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("jLabel2");
         jPanel3.add(jLabel2);
-        jLabel2.setBounds(70, 100, 41, 16);
+        jLabel2.setBounds(40, 80, 90, 30);
 
+        jLabel3.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("jLabel3");
         jPanel3.add(jLabel3);
-        jLabel3.setBounds(240, 100, 41, 16);
+        jLabel3.setBounds(210, 80, 90, 30);
 
+        jLabel4.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("jLabel4");
         jPanel3.add(jLabel4);
-        jLabel4.setBounds(410, 100, 41, 16);
+        jLabel4.setBounds(390, 80, 90, 30);
 
+        jLabel5.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("jLabel5");
         jPanel3.add(jLabel5);
-        jLabel5.setBounds(590, 100, 41, 16);
+        jLabel5.setBounds(560, 80, 90, 30);
 
+        jLabel6.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("jLabel6");
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(760, 100, 41, 16);
+        jLabel6.setBounds(730, 80, 90, 30);
 
+        jLabel7.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("jLabel7");
         jPanel3.add(jLabel7);
-        jLabel7.setBounds(940, 100, 41, 16);
+        jLabel7.setBounds(910, 80, 90, 30);
 
+        jLabel8.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("jLabel8");
         jPanel3.add(jLabel8);
-        jLabel8.setBounds(1120, 100, 41, 16);
+        jLabel8.setBounds(1080, 80, 90, 30);
 
+        jLabel9.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("jLabel9");
         jPanel3.add(jLabel9);
-        jLabel9.setBounds(1300, 100, 41, 16);
+        jLabel9.setBounds(1260, 80, 90, 30);
 
+        jLabel10.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("jLabel10");
         jPanel3.add(jLabel10);
-        jLabel10.setBounds(160, 310, 48, 16);
+        jLabel10.setBounds(130, 280, 90, 30);
 
+        jLabel11.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("jLabel11");
         jPanel3.add(jLabel11);
-        jLabel11.setBounds(510, 310, 48, 16);
+        jLabel11.setBounds(480, 280, 90, 30);
 
+        jLabel12.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("jLabel12");
         jPanel3.add(jLabel12);
-        jLabel12.setBounds(860, 310, 48, 16);
+        jLabel12.setBounds(830, 280, 90, 30);
 
+        jLabel13.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("jLabel13");
         jPanel3.add(jLabel13);
-        jLabel13.setBounds(1210, 310, 48, 16);
+        jLabel13.setBounds(1170, 280, 90, 30);
 
+        jLabel14.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("jLabel14");
         jPanel3.add(jLabel14);
-        jLabel14.setBounds(330, 500, 48, 16);
+        jLabel14.setBounds(300, 470, 90, 30);
 
+        jLabel15.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("jLabel15");
         jPanel3.add(jLabel15);
-        jLabel15.setBounds(1030, 500, 48, 16);
+        jLabel15.setBounds(1000, 470, 90, 30);
 
+        jLabel16.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("jLabel16");
         jPanel3.add(jLabel16);
-        jLabel16.setBounds(700, 670, 48, 16);
+        jLabel16.setBounds(650, 670, 90, 30);
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1390, 780));
 
@@ -512,7 +576,7 @@ public class VentanaTorneo8 extends javax.swing.JFrame {
                 int widthLblCaja = jPanel2.getWidth() / nEquipos;
                 int heightLblCaja = jPanel2.getHeight() / calcularFilas(nEquipos);
                 lblCaja.setBounds(lblCajaEnX, lblCajaEnY, widthLblCaja, heightLblCaja); //se ajusta la creación de los labels a una división el jPanel2
-                ImageIcon caja = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\boxModelWithOutBackground.png"); //se genera una instancia de los cuadros
+                ImageIcon caja = new ImageIcon("boxModelWithOutBackground.png"); //se genera una instancia de los cuadros
                 Icon iconoCaja = new ImageIcon(caja.getImage().getScaledInstance(lblCaja.getWidth(), lblCaja.getHeight(), Image.SCALE_SMOOTH)); //convertimos la imagen en un icono y escalamos la imagen
                 lblCaja.setIcon(iconoCaja);
                 jPanel2.add(lblCaja);

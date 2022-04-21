@@ -9,7 +9,7 @@ public class VentanaMenuInicio extends JFrame {
 
     public VentanaMenuInicio() {
         initComponents();
-        ImageIcon imagen1 = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\WildRift2.jpg");
+        ImageIcon imagen1 = new ImageIcon("WildRift2.jpg");
         Icon icono1 = new ImageIcon(imagen1.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH));
         jLabel1.setIcon(icono1);
         this.setLocationRelativeTo(null);
@@ -31,11 +31,13 @@ public class VentanaMenuInicio extends JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setUndecorated(true);
         setResizable(false);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(60, 32, 51));
+        jButton1.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Nuevo Torneo");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -44,6 +46,9 @@ public class VentanaMenuInicio extends JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, -1, -1));
 
+        jButton2.setBackground(new java.awt.Color(60, 32, 51));
+        jButton2.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Salir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

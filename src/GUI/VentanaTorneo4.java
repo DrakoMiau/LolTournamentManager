@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package GUI;
 
 import java.awt.Image;
@@ -10,15 +7,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author deive
- */
 public class VentanaTorneo4 extends javax.swing.JFrame {
 
     public VentanaTorneo4(int nEquipos) {
         initComponents();
-        ImageIcon wildRiftImage = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\WilRift.jpg");
+        ImageIcon wildRiftImage = new ImageIcon("WilRift.jpg");
         Icon myWildRiftIcon = new ImageIcon(wildRiftImage.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH));
         jLabel1.setIcon(myWildRiftIcon);
         this.setLocationRelativeTo(null);
@@ -72,6 +65,9 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton2.setBackground(new java.awt.Color(60, 32, 51));
+        jButton2.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Menú de Inicio");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +76,9 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 710, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(60, 32, 51));
+        jButton1.setFont(new java.awt.Font("Dubai", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Volver");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +90,9 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
         jPanel3.setOpaque(false);
         jPanel3.setLayout(null);
 
-        ganador1.setText("Ganador");
+        ganador1.setBackground(new java.awt.Color(255, 204, 51));
+        ganador1.setText("✓");
+        ganador1.setFocusable(false);
         ganador1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ganador1ActionPerformed(evt);
@@ -100,25 +101,31 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
         jPanel3.add(ganador1);
         ganador1.setBounds(0, 0, 57, 24);
 
-        ganador2.setText("Ganador");
+        ganador2.setBackground(new java.awt.Color(255, 204, 51));
+        ganador2.setText("✓");
+        ganador2.setFocusable(false);
         ganador2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ganador2ActionPerformed(evt);
             }
         });
         jPanel3.add(ganador2);
-        ganador2.setBounds(347, 0, 60, 24);
+        ganador2.setBounds(347, 0, 57, 24);
 
-        ganador3.setText("Ganador");
+        ganador3.setBackground(new java.awt.Color(255, 204, 51));
+        ganador3.setText("✓");
+        ganador3.setFocusable(false);
         ganador3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ganador3ActionPerformed(evt);
             }
         });
         jPanel3.add(ganador3);
-        ganador3.setBounds(695, 0, 60, 24);
+        ganador3.setBounds(695, 0, 57, 24);
 
-        ganador4.setText("Ganador");
+        ganador4.setBackground(new java.awt.Color(255, 204, 51));
+        ganador4.setText("✓");
+        ganador4.setFocusable(false);
         ganador4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ganador4ActionPerformed(evt);
@@ -127,37 +134,62 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
         jPanel3.add(ganador4);
         ganador4.setBounds(1042, 0, 57, 24);
 
-        ganador5.setText("Ganador");
+        ganador5.setBackground(new java.awt.Color(255, 204, 51));
+        ganador5.setText("✓");
+        ganador5.setFocusable(false);
         ganador5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ganador5ActionPerformed(evt);
             }
         });
         jPanel3.add(ganador5);
-        ganador5.setBounds(174, 260, 60, 24);
+        ganador5.setBounds(174, 260, 57, 24);
 
-        ganador6.setText("Ganador");
+        ganador6.setBackground(new java.awt.Color(255, 204, 51));
+        ganador6.setText("✓");
+        ganador6.setFocusable(false);
         ganador6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ganador6ActionPerformed(evt);
             }
         });
         jPanel3.add(ganador6);
-        ganador6.setBounds(868, 260, 60, 24);
+        ganador6.setBounds(868, 260, 57, 24);
+
+        jLabel2.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel2);
-        jLabel2.setBounds(80, 80, 140, 20);
+        jLabel2.setBounds(80, 100, 160, 30);
+
+        jLabel3.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel3);
-        jLabel3.setBounds(410, 90, 150, 20);
+        jLabel3.setBounds(440, 100, 160, 30);
+
+        jLabel4.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel4);
-        jLabel4.setBounds(840, 80, 110, 20);
+        jLabel4.setBounds(780, 100, 160, 30);
+
+        jLabel5.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel5);
-        jLabel5.setBounds(1170, 100, 160, 20);
+        jLabel5.setBounds(1140, 100, 160, 30);
+
+        jLabel6.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(290, 350, 140, 20);
+        jLabel6.setBounds(270, 370, 160, 30);
+
+        jLabel7.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel7);
-        jLabel7.setBounds(1000, 350, 190, 20);
+        jLabel7.setBounds(950, 370, 160, 30);
+
+        jLabel8.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel8);
-        jLabel8.setBounds(720, 540, 190, 20);
+        jLabel8.setBounds(600, 640, 160, 30);
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1390, 780));
 
@@ -233,7 +265,7 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
         ganador4.setVisible(false);
         ganador3.setVisible(false);
         ganador6.setVisible(true);
-        jLabel6.setText(jLabel5.getText());
+        jLabel7.setText(jLabel5.getText());
         validadorGanador6 = true;
     }//GEN-LAST:event_ganador4ActionPerformed
 
@@ -287,7 +319,7 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
                 int widthLblCaja = jPanel2.getWidth() / nEquipos;
                 int heightLblCaja = jPanel2.getHeight() / calcularFilas(nEquipos);
                 lblCaja.setBounds(lblCajaEnX, lblCajaEnY, widthLblCaja, heightLblCaja); //se ajusta la creación de los labels a una división el jPanel2
-                ImageIcon caja = new ImageIcon("C:\\Users\\deive\\Documents\\NetBeansProjects\\WildRiftProject\\src\\GUI\\boxModelWithOutBackground.png"); //se genera una instancia de los cuadros
+                ImageIcon caja = new ImageIcon("boxModelWithOutBackground.png"); //se genera una instancia de los cuadros
                 Icon iconoCaja = new ImageIcon(caja.getImage().getScaledInstance(lblCaja.getWidth(), lblCaja.getHeight(), Image.SCALE_SMOOTH)); //convertimos la imagen en un icono y escalamos la imagen
                 lblCaja.setIcon(iconoCaja);
                 jPanel2.add(lblCaja);
