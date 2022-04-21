@@ -38,6 +38,9 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
         jLabel3.setText(VentanaCreacionTorneo2.nombreDeEquipo[1].getText());
         jLabel4.setText(VentanaCreacionTorneo2.nombreDeEquipo[2].getText());
         jLabel5.setText(VentanaCreacionTorneo2.nombreDeEquipo[3].getText());
+
+        
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -65,7 +68,6 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1390, 780));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -212,7 +214,7 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
     private void ganador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ganador2ActionPerformed
         ganador1.setVisible(false);
         ganador2.setVisible(false);
-        ganador5.setVisible(false);
+        ganador5.setVisible(true);
         jLabel6.setText(jLabel3.getText());
         validadorGanador5 = true;
     }//GEN-LAST:event_ganador2ActionPerformed
@@ -228,9 +230,9 @@ public class VentanaTorneo4 extends javax.swing.JFrame {
     }//GEN-LAST:event_ganador6ActionPerformed
 
     private void ganador4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ganador4ActionPerformed
-        ganador1.setVisible(false);
-        ganador2.setVisible(false);
-        ganador5.setVisible(true);
+        ganador4.setVisible(false);
+        ganador3.setVisible(false);
+        ganador6.setVisible(true);
         jLabel6.setText(jLabel5.getText());
         validadorGanador6 = true;
     }//GEN-LAST:event_ganador4ActionPerformed

@@ -4,7 +4,7 @@ import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-
+import javax.swing.JOptionPane;
 
 public class VentanaTorneo16 extends javax.swing.JFrame {
 
@@ -24,6 +24,52 @@ public class VentanaTorneo16 extends javax.swing.JFrame {
         int[] lblHeightArray = new int[calcularNCajas(nEquipos)];
         generarCajas(nEquipos, lblEnXArray, lblEnYArray, lblWidthArray, lblHeightArray);
         jPanel3.setOpaque(false);
+        jButton19.setVisible(false);
+        jButton20.setVisible(false);
+        jButton21.setVisible(false);
+        jButton22.setVisible(false);
+        jButton23.setVisible(false);
+        jButton24.setVisible(false);
+        jButton25.setVisible(false);
+        jButton26.setVisible(false);
+        jButton27.setVisible(false);
+        jButton28.setVisible(false);
+        jButton29.setVisible(false);
+        jButton30.setVisible(false);
+        jButton31.setVisible(false);
+        jButton32.setVisible(false);
+        jLabel2.setText(VentanaCreacionTorneo2.nombreDeEquipo[0].getText());
+        jLabel3.setText(VentanaCreacionTorneo2.nombreDeEquipo[1].getText());
+        jLabel4.setText(VentanaCreacionTorneo2.nombreDeEquipo[2].getText());
+        jLabel5.setText(VentanaCreacionTorneo2.nombreDeEquipo[3].getText());
+        jLabel6.setText(VentanaCreacionTorneo2.nombreDeEquipo[4].getText());
+        jLabel7.setText(VentanaCreacionTorneo2.nombreDeEquipo[5].getText());
+        jLabel8.setText(VentanaCreacionTorneo2.nombreDeEquipo[6].getText());
+        jLabel9.setText(VentanaCreacionTorneo2.nombreDeEquipo[7].getText());
+        jLabel10.setText(VentanaCreacionTorneo2.nombreDeEquipo[8].getText());
+        jLabel11.setText(VentanaCreacionTorneo2.nombreDeEquipo[9].getText());
+        jLabel12.setText(VentanaCreacionTorneo2.nombreDeEquipo[10].getText());
+        jLabel13.setText(VentanaCreacionTorneo2.nombreDeEquipo[11].getText());
+        jLabel14.setText(VentanaCreacionTorneo2.nombreDeEquipo[12].getText());
+        jLabel15.setText(VentanaCreacionTorneo2.nombreDeEquipo[13].getText());
+        jLabel16.setText(VentanaCreacionTorneo2.nombreDeEquipo[14].getText());
+        jLabel17.setText(VentanaCreacionTorneo2.nombreDeEquipo[15].getText());
+        jLabel18.setVisible(false);
+        jLabel19.setVisible(false);
+        jLabel20.setVisible(false);
+        jLabel21.setVisible(false);
+        jLabel22.setVisible(false);
+        jLabel23.setVisible(false);
+        jLabel24.setVisible(false);
+        jLabel25.setVisible(false);
+        jLabel26.setVisible(false);
+        jLabel27.setVisible(false);
+        jLabel28.setVisible(false);
+        jLabel29.setVisible(false);
+        jLabel30.setVisible(false);
+        jLabel31.setVisible(false);
+        jLabel32.setVisible(false);
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -64,6 +110,37 @@ public class VentanaTorneo16 extends javax.swing.JFrame {
         jButton30 = new javax.swing.JButton();
         jButton31 = new javax.swing.JButton();
         jButton32 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -362,6 +439,130 @@ public class VentanaTorneo16 extends javax.swing.JFrame {
         jPanel3.add(jButton32);
         jButton32.setBounds(989, 468, 64, 24);
 
+        jLabel2.setText("jLabel2");
+        jPanel3.add(jLabel2);
+        jLabel2.setBounds(30, 70, 41, 16);
+
+        jLabel3.setText("jLabel3");
+        jPanel3.add(jLabel3);
+        jLabel3.setBounds(110, 70, 41, 16);
+
+        jLabel4.setText("jLabel4");
+        jPanel3.add(jLabel4);
+        jLabel4.setBounds(200, 70, 41, 16);
+
+        jLabel5.setText("jLabel5");
+        jPanel3.add(jLabel5);
+        jLabel5.setBounds(280, 70, 41, 16);
+
+        jLabel6.setText("jLabel6");
+        jPanel3.add(jLabel6);
+        jLabel6.setBounds(360, 70, 41, 16);
+
+        jLabel7.setText("jLabel7");
+        jPanel3.add(jLabel7);
+        jLabel7.setBounds(460, 70, 41, 16);
+
+        jLabel8.setText("jLabel8");
+        jPanel3.add(jLabel8);
+        jLabel8.setBounds(550, 70, 41, 16);
+
+        jLabel9.setText("jLabel9");
+        jPanel3.add(jLabel9);
+        jLabel9.setBounds(630, 70, 41, 16);
+
+        jLabel10.setText("jLabel10");
+        jPanel3.add(jLabel10);
+        jLabel10.setBounds(720, 70, 48, 16);
+
+        jLabel11.setText("jLabel11");
+        jPanel3.add(jLabel11);
+        jLabel11.setBounds(810, 70, 48, 16);
+
+        jLabel12.setText("jLabel12");
+        jPanel3.add(jLabel12);
+        jLabel12.setBounds(890, 70, 48, 16);
+
+        jLabel13.setText("jLabel13");
+        jPanel3.add(jLabel13);
+        jLabel13.setBounds(980, 70, 48, 16);
+
+        jLabel14.setText("jLabel14");
+        jPanel3.add(jLabel14);
+        jLabel14.setBounds(1070, 70, 48, 16);
+
+        jLabel15.setText("jLabel15");
+        jPanel3.add(jLabel15);
+        jLabel15.setBounds(1160, 70, 48, 16);
+
+        jLabel16.setText("jLabel16");
+        jPanel3.add(jLabel16);
+        jLabel16.setBounds(1240, 70, 48, 16);
+
+        jLabel17.setText("jLabel17");
+        jPanel3.add(jLabel17);
+        jLabel17.setBounds(1330, 70, 48, 16);
+
+        jLabel18.setText("jLabel18");
+        jPanel3.add(jLabel18);
+        jLabel18.setBounds(70, 230, 48, 16);
+
+        jLabel19.setText("jLabel19");
+        jPanel3.add(jLabel19);
+        jLabel19.setBounds(240, 230, 48, 16);
+
+        jLabel20.setText("jLabel20");
+        jPanel3.add(jLabel20);
+        jLabel20.setBounds(410, 230, 48, 16);
+
+        jLabel21.setText("jLabel21");
+        jPanel3.add(jLabel21);
+        jLabel21.setBounds(590, 230, 48, 16);
+
+        jLabel22.setText("jLabel22");
+        jPanel3.add(jLabel22);
+        jLabel22.setBounds(760, 230, 48, 16);
+
+        jLabel23.setText("jLabel23");
+        jPanel3.add(jLabel23);
+        jLabel23.setBounds(940, 230, 48, 16);
+
+        jLabel24.setText("jLabel24");
+        jPanel3.add(jLabel24);
+        jLabel24.setBounds(1110, 230, 48, 16);
+
+        jLabel25.setText("jLabel25");
+        jPanel3.add(jLabel25);
+        jLabel25.setBounds(1290, 230, 48, 16);
+
+        jLabel26.setText("jLabel26");
+        jPanel3.add(jLabel26);
+        jLabel26.setBounds(160, 390, 48, 16);
+
+        jLabel27.setText("jLabel27");
+        jPanel3.add(jLabel27);
+        jLabel27.setBounds(510, 390, 48, 16);
+
+        jLabel28.setText("jLabel28");
+        jPanel3.add(jLabel28);
+        jLabel28.setBounds(860, 390, 48, 16);
+
+        jLabel29.setText("jLabel29");
+        jPanel3.add(jLabel29);
+        jLabel29.setBounds(1200, 390, 48, 16);
+
+        jLabel30.setText("jLabel30");
+        jPanel3.add(jLabel30);
+        jLabel30.setBounds(650, 710, 48, 16);
+
+        jLabel31.setText("jLabel31");
+        jPanel3.add(jLabel31);
+        jLabel31.setBounds(330, 540, 48, 16);
+
+        jLabel32.setText("jLabel32");
+        jPanel3.add(jLabel32);
+        jLabel32.setBounds(1020, 540, 48, 16);
+
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1390, 780));
 
         jPanel2.setOpaque(false);
@@ -373,6 +574,10 @@ public class VentanaTorneo16 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    boolean verificador1 = false, verificador2 = false, verificador3 = false, verificador4 = false, verificador5 = false, verificador6 = false, verificador7 = false, verificador8 = false;
+    boolean verificador9 = false, verificador10 = false, verificador11 = false, verificador12 = false;
+    boolean verificador13 = false, verificador14 =false;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         VentanaCreacionTorneo2 volverVentanaCreacionTorneo2 = new VentanaCreacionTorneo2(Integer.parseInt(VentanaCreacionTorneo.nEquipos.getText()));
@@ -390,184 +595,340 @@ public class VentanaTorneo16 extends javax.swing.JFrame {
         jButton3.setVisible(false);
         jButton4.setVisible(false);
         jButton19.setVisible(true);
+        jLabel18.setText(jLabel2.getText());
+        jLabel18.setVisible(true);
+        verificador1 = true;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         jButton3.setVisible(false);
         jButton4.setVisible(false);
         jButton19.setVisible(true);
+        jLabel18.setText(jLabel3.getText());
+        jLabel18.setVisible(true);
+        verificador1 = true;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton5.setVisible(false);
+        jButton6.setVisible(false);
+        jButton20.setVisible(true);
+        jLabel19.setText(jLabel4.getText());
+        jLabel19.setVisible(true);
+        verificador2 = true;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton5.setVisible(false);
+        jButton6.setVisible(false);
+        jButton20.setVisible(true);
+        jLabel19.setText(jLabel5.getText());
+        jLabel19.setVisible(true);
+        verificador2 = true;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton7.setVisible(false);
+        jButton8.setVisible(false);
+        jButton21.setVisible(true);
+        jLabel20.setText(jLabel6.getText());
+        jLabel20.setVisible(true);
+        verificador3 = true;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton7.setVisible(false);
+        jButton8.setVisible(false);
+        jButton21.setVisible(true);
+        jLabel20.setText(jLabel7.getText());
+        jLabel20.setVisible(true);
+        verificador3 = true;
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton9.setVisible(false);
+        jButton10.setVisible(false);
+        jButton22.setVisible(true);
+        jLabel21.setText(jLabel8.getText());
+        jLabel21.setVisible(true);
+        verificador4 = true;
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton9.setVisible(false);
+        jButton10.setVisible(false);
+        jButton22.setVisible(true);
+        jLabel21.setText(jLabel9.getText());
+        jLabel21.setVisible(true);
+        verificador4 = true;
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton11.setVisible(false);
+        jButton12.setVisible(false);
+        jButton23.setVisible(true);
+        jLabel22.setText(jLabel10.getText());
+        jLabel22.setVisible(true);
+        verificador5 = true;
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton11.setVisible(false);
+        jButton12.setVisible(false);
+        jButton23.setVisible(true);
+        jLabel22.setText(jLabel11.getText());
+        jLabel22.setVisible(true);
+        verificador5 = true;
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton13.setVisible(false);
+        jButton14.setVisible(false);
+        jButton24.setVisible(true);
+        jLabel23.setText(jLabel12.getText());
+        jLabel23.setVisible(true);
+        verificador6 = true;
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton13.setVisible(false);
+        jButton14.setVisible(false);
+        jButton24.setVisible(true);
+        jLabel23.setText(jLabel13.getText());
+        jLabel23.setVisible(true);
+        verificador6 = true;
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton15.setVisible(false);
+        jButton16.setVisible(false);
+        jButton25.setVisible(true);
+        jLabel24.setText(jLabel14.getText());
+        jLabel24.setVisible(true);
+        verificador7 = true;
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton15.setVisible(false);
+        jButton16.setVisible(false);
+        jButton25.setVisible(true);
+        jLabel24.setText(jLabel15.getText());
+        jLabel24.setVisible(true);
+        verificador7 = true;
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton17.setVisible(false);
+        jButton18.setVisible(false);
+        jButton26.setVisible(true);
+        jLabel25.setText(jLabel16.getText());
+        jLabel25.setVisible(true);
+        verificador8 = true;
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        jButton17.setVisible(false);
+        jButton18.setVisible(false);
+        jButton26.setVisible(true);
+        jLabel25.setText(jLabel17.getText());
+        jLabel25.setVisible(true);
+        verificador8 = true;
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton19.setVisible(false);
+            jButton20.setVisible(false);
+            jButton27.setVisible(true);
+            jLabel26.setText(jLabel18.getText());
+            jLabel26.setVisible(true);
+            verificador9 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton19.setVisible(false);
+            jButton20.setVisible(false);
+            jButton27.setVisible(true);
+            jLabel26.setText(jLabel19.getText());
+            jLabel26.setVisible(true);
+            verificador9 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton21.setVisible(false);
+            jButton22.setVisible(false);
+            jButton28.setVisible(true);
+            jLabel27.setText(jLabel20.getText());
+            jLabel27.setVisible(true);
+            verificador10 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton21.setVisible(false);
+            jButton22.setVisible(false);
+            jButton28.setVisible(true);
+            jLabel27.setText(jLabel21.getText());
+            jLabel27.setVisible(true);
+            verificador10 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton23.setVisible(false);
+            jButton24.setVisible(false);
+            jButton29.setVisible(true);
+            jLabel28.setText(jLabel22.getText());
+            jLabel28.setVisible(true);
+            verificador11 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton23.setVisible(false);
+            jButton24.setVisible(false);
+            jButton29.setVisible(true);
+            jLabel25.setText(jLabel23.getText());
+            jLabel28.setVisible(true);
+            verificador11 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton25.setVisible(false);
+            jButton26.setVisible(false);
+            jButton30.setVisible(true);
+            jLabel29.setText(jLabel24.getText());
+            jLabel29.setVisible(true);
+            verificador12 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador1 && verificador2 && verificador3 && verificador4 && verificador5 && verificador6 && verificador7 && verificador8) {
+            jButton25.setVisible(false);
+            jButton26.setVisible(false);
+            jButton30.setVisible(true);
+            jLabel29.setText(jLabel25.getText());
+            jLabel29.setVisible(true);
+            verificador12 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador9 && verificador10 && verificador11 && verificador12) {
+            jButton27.setVisible(false);
+            jButton28.setVisible(false);
+            jButton31.setVisible(true);
+            jLabel31.setText(jLabel26.getText());
+            jLabel31.setVisible(true);
+            verificador13 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador9 && verificador10 && verificador11 && verificador12) {
+            jButton27.setVisible(false);
+            jButton28.setVisible(false);
+            jButton31.setVisible(true);
+            jLabel31.setText(jLabel27.getText());
+            jLabel31.setVisible(true);
+            verificador13 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador9 && verificador10 && verificador11 && verificador12) {
+            jButton29.setVisible(false);
+            jButton30.setVisible(false);
+            jButton32.setVisible(true);
+            jLabel32.setText(jLabel28.getText());
+            jLabel32.setVisible(true);
+            verificador14 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador9 && verificador10 && verificador11 && verificador12) {
+            jButton29.setVisible(false);
+            jButton30.setVisible(false);
+            jButton32.setVisible(true);
+            jLabel32.setText(jLabel29.getText());
+            jLabel32.setVisible(true);
+            verificador14 = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton19.setVisible(true);
+        if (verificador13 && verificador14) {
+            jButton31.setVisible(false);
+            jButton32.setVisible(false);
+            jLabel30.setText(jLabel31.getText());
+            jLabel30.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
+        if (verificador13 && verificador14) {
+            jButton31.setVisible(false);
+            jButton32.setVisible(false);
+            jLabel30.setText(jLabel32.getText());
+            jLabel30.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "Faltan equipos por seleccionar");
+        }
+
     }//GEN-LAST:event_jButton32ActionPerformed
 
     public static void main(String args[]) {
 
     }
+
     private int calcularFilas(int nEquipos) {
         int filas = nEquipos;
         int nFilas = 0;
@@ -577,7 +938,8 @@ public class VentanaTorneo16 extends javax.swing.JFrame {
         }
         return nFilas;
     }
-     private int calcularNCajas(int nEquipos) {
+
+    private int calcularNCajas(int nEquipos) {
         int nCajas = 0;
 
         for (int j = 0; j < calcularFilas(nEquipos); j++) {
@@ -647,6 +1009,37 @@ public class VentanaTorneo16 extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
